@@ -9,6 +9,8 @@ Author URI: http://elmered.com
 */
 
 
+if ( is_woocommerce_active() ) {
+
 class pe_wc_product_custom_taxonomy
 {
     var $taxonomies = array(
@@ -131,3 +133,5 @@ class pe_wc_product_custom_taxonomy
 }
 
 $_GLOBALS['pe_wc_product_custom_taxonomy'] = new pe_wc_product_custom_taxonomy();
+
+}
